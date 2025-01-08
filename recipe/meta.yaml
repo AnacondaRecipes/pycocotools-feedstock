@@ -21,13 +21,12 @@ requirements:
     - python
     - pip
     - setuptools
+    - wheel
     - cython
     - matplotlib-base
     - numpy
   run:
     - python
-    - cython
-    - matplotlib-base
     - {{ pin_compatible('numpy') }}
 
 test:
@@ -52,3 +51,5 @@ about:
 extra:
   recipe-maintainers:
     - erykoff
+  skip-lints:
+    - host_section_needs_exact_pinnings
