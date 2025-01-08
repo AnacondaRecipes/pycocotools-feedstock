@@ -36,7 +36,10 @@ test:
   commands:
     - pip check
   requires:
+    - python
     - pip
+    - numpy
+    - matplotlib-base
 
 about:
   home: https://github.com/cocodataset/cocoapi
