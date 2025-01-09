@@ -20,9 +20,9 @@ requirements:
   host:
     - python
     - pip
-    - setuptools
+    - setuptools >=43.0.0
     - wheel
-    - cython
+    - cython >=0.27.3
     - numpy {{ numpy }}
   run:
     - python
@@ -51,5 +51,3 @@ about:
 extra:
   recipe-maintainers:
     - erykoff
-  skip-lints:
-    - host_section_needs_exact_pinnings
