@@ -23,11 +23,11 @@ requirements:
     - setuptools
     - wheel
     - cython
-    - matplotlib-base
-    - numpy
+    - numpy {{ numpy }}
   run:
     - python
     - {{ pin_compatible('numpy') }}
+    - matplotlib-base
 
 test:
   imports:
@@ -36,10 +36,7 @@ test:
   commands:
     - pip check
   requires:
-    - python
     - pip
-    - numpy
-    - matplotlib-base
 
 about:
   home: https://github.com/cocodataset/cocoapi
